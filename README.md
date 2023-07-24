@@ -1,10 +1,6 @@
 # IDA Scripts
 
-Personal ideas which were created an IDA to approach complicated problems.
-
-## Branches
-
-* [chain-metadata](https://github.com/dovezp/ida.scripts/tree/chain-metadata): Chained metadata together to easily identify common methods in new builds
+Static analysis deobfuscation script for the xObf obfuscator.
 
 ## License
 
