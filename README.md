@@ -1,6 +1,7 @@
 # IDA Scripts
+## Personal Shenanigans
 
-Personal ideas which were created an IDA to approach complicated problems.
+Personal ideas which were created an IDA to approach unique and complicated problems.
 
 ## Branches
 
