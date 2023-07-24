@@ -1,13 +1,7 @@
 # IDA Scripts
 ## Personal Shenanigans
 
-Personal ideas which were created an IDA to approach unique and complicated problems.
-
-## Branches
-
-* [chain-metadata](https://github.com/dovezp/ida.scripts/tree/chain-metadata): Chained metadata together to easily identify common methods in new builds
-* [auto-hotkey](https://github.com/dovezp/ida.scripts/tree/auto-hotkey): Hotkeys commonly used functions
-* [dexObf](https://github.com/dovezp/ida.scripts/tree/dexobf): xObf Deobfuscation
+Block optimization via IDA's preprocessing analysis of the blocks.
 
 ## License
 
