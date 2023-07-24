@@ -7,12 +7,12 @@ This script contains functions and logic for defining and working with the "VMCo
 
 The overall flow of the Themida 1.8 unvirtualization script is as follows:
 
-Define and create the "VMContext" structure within IDA using define_vmcontext(handler_len).
-Find VMs and their corresponding handlers within the binary using `find_vms()` and `find_lodsb(ea)`.
-Backtrace and prune potential handlers to identify valid handlers for the VM using `backtrace_crefs(ea)`.
-Identify and set the handler array within the VMContext structure.
-Create and set the VMContext at a specific base address using `set_vmcontext(ea)`.
-Obtain information about the VM using the Context class, which takes in the VMContext's base address and related information.
+* Define and create the "VMContext" structure within IDA using define_vmcontext(handler_len).
+* Find VMs and their corresponding handlers within the binary using `find_vms()` and `find_lodsb(ea)`.
+* Backtrace and prune potential handlers to identify valid handlers for the VM using `backtrace_crefs(ea)`.
+* Identify and set the handler array within the VMContext structure.
+* Create and set the VMContext at a specific base address using `set_vmcontext(ea)`.
+* Obtain information about the VM using the Context class, which takes in the VMContext's base address and related information.
 
 ## License
 
