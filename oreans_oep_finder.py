@@ -1,10 +1,11 @@
 #!/usr/bin/python
+# coding=utf-8
 
 """
-brief:          Oreans - OEP Finder (works for "all" versions); Tested on 2.3.0.0, 2.3.5.10, 3.0.8.0
+brief:          Oreans - OEP Finder (Universal=works for "all" versions); Tested on 2.3.0.0, 2.3.5.10, 3.0.8.0
 author:         dovezp
 contact:        https://github.com/dovezp
-version:        2020/MAY/28
+version:        2020/AUG/27
 license:        Apache License 2.0 (Apache-2.0)
 """
 
@@ -20,10 +21,20 @@ except Exception as e:
 # GLOBAL
 
 
-SCRIPT_VERSION = "2020/MAY/28"
+SCRIPT_VERSION = "2020/AUG/27"
 SCRIPT_NAME = "Oreans - OEP Finder"
 SCRIPT_DESCRIPTION = "This is fast OEP Script that works on [ALL] products protected by Oreans."
 SCRIPT_AUTHOR = "dovezp (https://github.com/dovezp)"
+
+
+# --------------------------------------------------------------------------------------------------
+# GLOBAL SETTINGS
+
+
+WITHDRAW_COUNTER = 0
+# [!] The OEP is usually reached in 0 or 3 counts
+WITHDRAW_LIMIT = 5
+# [!] Used to avoid infinite looping when searching for the OEP adjust if an issue occurs
 
 
 # --------------------------------------------------------------------------------------------------
@@ -70,18 +81,17 @@ class OreansEntryFinder(object):
     def __init__(self):
         super(OreansEntryFinder, self).__init__()
         self.kernel32_VirtualProtect = pluginsdk.x64dbg.RemoteGetProcAddress("KernelBase.dll", "VirtualProtect")
-
         self.module_base = pluginsdk.GetMainModuleInfo().base
         self.module_end = self.module_base + pluginsdk.GetMainModuleInfo().size
-
         if get_section(".text") is not None:
             # For newer configurations / others protected a "certain" way
             self.module_text_section = get_section(".text")
         else:
             # For most common configurations that have "    " as their name
             self.module_text_section = pluginsdk.SectionFromAddr(self.module_base, 0)
-
         self.module_text_section_end = self.module_text_section.addr + self.module_text_section.size
+        pluginsdk.DeleteBreakpoint(self.kernel32_VirtualProtect)
+        pluginsdk.DeleteBreakpoint(self.module_text_section.addr)
 
     def __step_cip_monitor(self):
         pluginsdk.SetBreakpoint(self.kernel32_VirtualProtect)
@@ -91,13 +101,17 @@ class OreansEntryFinder(object):
         return
 
     def __step_stack_monitor(self):
-        while True:
+        global WITHDRAW_COUNTER
+        global WITHDRAW_LIMIT
+        while WITHDRAW_COUNTER <= WITHDRAW_LIMIT:
             self.__step_cip_monitor()
             if pluginsdk.x64dbg.ReadDword(pluginsdk.register.GetESP() + 4) == self.module_base:
                 break
             else:
                 pluginsdk.StepOver()
-
+                WITHDRAW_COUNTER += 1
+        if WITHDRAW_COUNTER > WITHDRAW_LIMIT:
+            return -1
         pluginsdk.x64dbg.DbgCmdExecDirect("bpm " + hex(self.module_text_section.addr) + ", 0, x")
         pluginsdk.Run()
         return pluginsdk.GetCIP()
