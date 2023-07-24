@@ -1,13 +1,19 @@
 # IDA Scripts
 ## Personal Shenanigans
 
-Personal ideas which were created an IDA to approach unique and complicated problems.
+The scripts related for handling "Themida unvirtualization" within IDA 7.5 and x64dbg
 
-## Branches
+This script contains functions and logic for defining and working with the "VMContext" structure, finding VMs, handlers, and their offsets, and creating/setting the VMContext within the IDA database.
 
-* [chain-metadata](https://github.com/dovezp/ida.scripts/tree/chain-metadata): Chained metadata together to easily identify common methods in new builds
-* [auto-hotkey](https://github.com/dovezp/ida.scripts/tree/auto-hotkey): Hotkeys commonly used functions
-* [dexObf](https://github.com/dovezp/ida.scripts/tree/dexobf): xObf Deobfuscation
+The overall flow of the Themida 1.8 unvirtualization script are as follows:
+
+Define and create the "VMContext" structure within IDA using define_vmcontext(handler_len).
+Find VMs and their corresponding handlers within the binary using find_vms() and find_lodsb(ea).
+Backtrace and prune potential handlers to identify valid handlers for the VM using backtrace_crefs(ea).
+Identify and set the handler array within the VMContext structure.
+Create and set the VMContext at a specific base address using set_vmcontext(ea).
+Obtain information about the VM using the Context class, which takes in the VMContext's base address and related information.
+
 
 ## License
 
