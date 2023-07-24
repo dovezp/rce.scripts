@@ -54,8 +54,8 @@ target:
 .text:026128EF
 ```
 
+```
 prove that source == target
-
 from string address -> target text address
 iterate till instruction is either call or jump (uncon / con)
 sub-target = get branch item address
@@ -70,7 +70,7 @@ for s in strings:
 
 push count usually stays the same between call blocks
 use that as well?
-
+```
 
 ## License
 
