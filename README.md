@@ -3,6 +3,10 @@
 
 Block optimization via IDA's preprocessing analysis of the blocks.
 
+
+https://github.com/dovezp/ida.scripts/assets/89095890/6ff6d940-545d-4ad1-81cd-f633a51f6b96
+
+
 ## License
 
 This project is licensed under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)).
