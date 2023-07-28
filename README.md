@@ -14,6 +14,11 @@ The overall flow of the Themida 1.8 unvirtualization script is as follows:
 * Create and set the VMContext at a specific base address using `set_vmcontext(ea)`.
 * Obtain information about the VM using the Context class, which takes in the VMContext's base address and related information.
 
+https://github.com/dovezp/ida.scripts/assets/89095890/ff25b2d6-57d4-499a-87e7-4a8444d57c46
+https://github.com/dovezp/ida.scripts/assets/89095890/83c2a278-93b3-475e-a177-fd99bb72c0d9
+https://github.com/dovezp/ida.scripts/assets/89095890/6e225737-0867-4a1e-94d1-10106c8c7841
+https://github.com/dovezp/ida.scripts/assets/89095890/92e6eb6e-6f8d-4e09-9759-efa3503d9370
+
 ## License
 
 This project is licensed under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)).
