@@ -1,5 +1,4 @@
-# IDA Scripts
-## Personal Shenanigans
+# Oreans Scripts
 
 The scripts related for handling "Themida unvirtualization" within IDA 7.0, 7.5 and x64dbg
 
