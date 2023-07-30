@@ -1,6 +1,11 @@
-# IDA Scripts
+# xObf Scripts
 
 Static analysis deobfuscation script for the xObf obfuscator.
+
+### Unpacking xObf x86 Demo
+https://github.com/dovezp/rce.scripts/assets/89095890/49b5ad24-a2ab-407b-a0b4-5f731f411bfa
+
+[Reference write-up, Deobfuscation: xObf (x86 and x64 Obfuscator)](https://dovezp.github.io/portfolio/2022/05/23/WRITEUP_Deobfuscating_xObf.html)
 
 ## License
 
