@@ -3,6 +3,8 @@
 
 Obfuscation of operations in compile time (meta programming) to disrupt IDA analysis.
 
+### Meta Programming Obfuscation
+
 https://github.com/dovezp/ida.scripts/assets/89095890/a91a487b-7c3b-41eb-8d3f-525025330629
 
 ## License
