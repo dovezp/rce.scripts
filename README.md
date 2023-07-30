@@ -1,5 +1,4 @@
-# IDA Scripts
-## Personal Shenanigans
+# MapleStory Scripts
 
 Maplestory analysis scripts. 
 
