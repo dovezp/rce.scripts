@@ -31,6 +31,7 @@ The overall flow of the Themida 1.8 unvirtualization script is as follows:
 
 * [Reference script, oreans_anti_debug_blacklist_identifier.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_anti_debug_blacklist_identifier.py)
 * [Reference code, tmdv2_vmware_check.asm](https://github.com/dovezp/rce.scripts/blob/oreans/tmdv2_vmware_check.asm)
+* [Reference write-up, Analysis: Oreans Themida 2.3.5.10 (x86) → Anti-Debugger Detections](https://dovezp.github.io/portfolio/2020/08/27/WRITEUP_Analysis__Oreans_Themida__2.3.5.10_x32_-_Anti-Debugger-Detections.html)
 
 ## Oreans v2 Junk
 
