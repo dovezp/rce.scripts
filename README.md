@@ -16,7 +16,7 @@ Some ideas to approach problems.
 * [Filtering Basic Blocks](https://github.com/dovezp/rce.scripts/tree/ida-basicblocks)
 
 ### Game Related
-* [Searching MapleStory](https://github.com/dovezp/rce.scripts/tree/maplestory)
+* [Analyzing MapleStory](https://github.com/dovezp/rce.scripts/tree/maplestory)
 
 ## Feedback
 
