@@ -1,8 +1,6 @@
 # Reverse Engineering Scripts
 
-Personal ideas to approach problems.
-
-![309039866_185550960674174_3086185005225413966_n](https://github.com/dovezp/rce.scripts/assets/89095890/5d1db70d-51fe-422b-af12-07752e2fee3c)
+Some ideas to approach problems.
 
 ## Branches
 
