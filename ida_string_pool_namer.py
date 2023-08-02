@@ -2,6 +2,32 @@ import idaapi
 import idautils
 import idc
 
+'''
+68 ? ? ? ? 50 E8 ? ? ? ? 8B C8 E8 ? ? ? ?
+68 ? ? ? ? 51 E8 ? ? ? ? 8B C8 E8 ? ? ? ?
+68 ? ? ? ? 52 E8 ? ? ? ? 8B C8 E8 ? ? ? ?
+
+1st call ?GetInstance@StringPool@@SAAAV1@XZ
+
+2nd call ?GetBSTR@StringPool@@QAE?AVZtl_bstr_t@@I@Z
+
+
+D6 DE 75 86 46 64 A3 71 E8 E6 7B D3 33 30 E7 2E
+
+?ms_aKey@StringPool@@0QBEB
+
+
+E8 ? ? ? ? 6A 04 B9 ? ? ? ? C6
+
+1st call ?GetString@StringPool@@AAE?AV?$ZXString@D@@ID@Z
+
+
+8B 87 ? ? ? ? B9 ? ? ? ? 6A 04 0F BE 00 89 45 EC E8
+
+1st mov ?ms_aString@StringPool@@0PAPBDA
+2nd mov ?_s_alloc@?$ZAllocEx@VZAllocAnonSelector@@@@0V1@A
+'''
+
 START_ADDR = 0x00400000
 
 # # #
