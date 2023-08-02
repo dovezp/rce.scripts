@@ -494,8 +494,3 @@ note: since 2.3.5+ or so they changed the entry structures and 2.3.9+ removing c
 =====================================================================================================
 to continue...
 ```
-
-
-
-## License
-tea is distributed under the GNU General Public License v2.0 ([GPLv2](https://tldrlegal.com/license/gnu-general-public-license-v2))
