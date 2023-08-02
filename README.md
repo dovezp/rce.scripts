@@ -32,6 +32,8 @@ This script is a Python script designed to identify and analyze macro entry poin
   
 * [Reference script, oreans_macro_entry_identifier_reversal.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_macro_entry_identifier_reversal.py)
 
+The script is a Python script designed to identify and analyze macro entry points in programs protected by Oreans (a software protection system) using a more accurate reversal approach, starting from the end of the text segment and iteratively finding potential macro entry points by searching for landing strips.
+
 ## Oreans v2 Antis
 
 * [Reference script, oreans_anti_debug_blacklist_identifier.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_anti_debug_blacklist_identifier.py)
