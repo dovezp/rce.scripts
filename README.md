@@ -18,9 +18,11 @@ The overall flow of the Themida 1.8 unvirtualization script is as follows:
 * Create and set the VMContext at a specific base address using `set_vmcontext(ea)`.
 * Obtain information about the VM using the Context class, which takes in the VMContext's base address and related information.
 
-## Oreans v2 Entry Unpacking Decryption
+## Oreans v2 Entry Unpacking Decryption Concept
 
 * [Reference script, themida_entry.py](https://github.com/dovezp/rce.scripts/blob/oreans/themida_entry.py)
+
+The example script decodes the entry buffer of data located at 0x3233008 with a length of 0x400 bytes using two encryption keys 0x2E188729 and 0x40B2470.
 
 ## Oreans v2 Macro Identifiers
 
