@@ -5,7 +5,6 @@ The following is related to handling Oreans unvirtualization, unpacking, debuggi
 ## Oreans v1.8 UnVirtualization Concept
 
 * [Reference script, themida_1.8_unvirt_draft.py](https://github.com/dovezp/rce.scripts/blob/oreans/themida_1.8_unvirt_draft.py)
-* [Reference dataset, oreans_handlers.csv](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_handlers.csv)
 
   This script contains functions and logic for defining and working with the "VMContext" structure, finding VMs, handlers, and their offsets, and creating/setting the VMContext within the IDA database.
 
@@ -17,6 +16,8 @@ The following is related to handling Oreans unvirtualization, unpacking, debuggi
   * Identify and set the handler array within the VMContext structure.
   * Create and set the VMContext at a specific base address using `set_vmcontext(ea)`.
   * Obtain information about the VM using the Context class, which takes in the VMContext's base address and related information.
+ 
+* [Reference dataset, oreans_handlers.csv](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_handlers.csv)
 
 ## Oreans v2 Entry Unpacking Decryption Concept
 
