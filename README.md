@@ -154,11 +154,6 @@ https://github.com/dovezp/rce.scripts/assets/89095890/83c2a278-93b3-475e-a177-fd
 ### Unpacking Advanced API Wrapping Oreans v3 Demo 
 https://github.com/dovezp/rce.scripts/assets/89095890/92e6eb6e-6f8d-4e09-9759-efa3503d9370
 
-
-## License
-
-This project is licensed under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)).
-
 ## Feedback
 
 I welcome your constructive input - both negative and positive. I will continue to try to provide updates when able. At some point you may find errors, inconsistencies, or methods that could be improved, or are missing altogether. Your feedback is critical to help improve future revisions.
