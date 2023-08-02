@@ -2,7 +2,7 @@
 
 The scripts related to handling Oreans unvirtualization, unpacking, debugging, and deobfuscation within IDA 7.0, 7.5, and x64dbg.
 
-## Oreans Themida v1.8 UnVirtualization Draft
+## Oreans v1.8 UnVirtualization Concept
 
 * [Reference script, themida_1.8_unvirt_draft.py](https://github.com/dovezp/rce.scripts/blob/oreans/themida_1.8_unvirt_draft.py)
 * [Reference dataset, oreans_handlers.csv](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_handlers.csv)
