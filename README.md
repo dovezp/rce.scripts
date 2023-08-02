@@ -37,6 +37,10 @@ The following is related to handling Oreans unvirtualization, unpacking, debuggi
 
 ## Oreans v2 Antis
 
+![272611955_119256450636959_1763802256963992078_n](https://github.com/dovezp/rce.scripts/assets/89095890/74805a9b-7cc4-4e66-a396-849ff64c5f86)
+
+![272584384_119256383970299_1366663367178891194_n](https://github.com/dovezp/rce.scripts/assets/89095890/0f92a14c-312d-414f-be52-c00bcb052f02)
+
 * [Reference script, oreans_anti_debug_blacklist_identifier.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_anti_debug_blacklist_identifier.py)
 
   This script is a Python script designed to identify anti-debugging blacklist signatures in programs protected by Oreans Version 2.
@@ -126,6 +130,8 @@ https://github.com/dovezp/rce.scripts/assets/89095890/6e225737-0867-4a1e-94d1-10
 https://github.com/dovezp/rce.scripts/assets/89095890/ff25b2d6-57d4-499a-87e7-4a8444d57c46
 
 ## Oreans v3 API Unwrapping
+
+![272362247_119249740637630_461081062019103163_n](https://github.com/dovezp/rce.scripts/assets/89095890/07cbaf54-da79-41e5-92b1-b0fb1f3fcbe5)
 
 * [Reference script, oreans_api_unwrapper_x.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_api_unwrapper_x.py)
 
