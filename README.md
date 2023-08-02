@@ -4,7 +4,7 @@
 
 * [Reference data, ms95-v01.json](https://github.com/dovezp/rce.scripts/blob/maplestory/ms95-v01.json)
 * [Reference data, ms95-v02.json](https://github.com/dovezp/rce.scripts/blob/maplestory/ms95-v02.json)
-* [Uses Obtaining Meta Data](https://github.com/dovezp/rce.scripts/tree/ida-metadata)
+* [Uses Obtaining Meta Data, strings_chainer.py](https://github.com/dovezp/rce.scripts/tree/ida-metadata)
 
 ### Find String Pools
 
