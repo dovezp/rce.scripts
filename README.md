@@ -1,6 +1,11 @@
 # Oreans Scripts
 
-The scripts related for handling "Themida unvirtualization" within IDA 7.0, 7.5 and x64dbg
+The scripts related to handling Oreans unvirtualization, unpacking, debugging, and deobfuscation within IDA 7.0, 7.5, and x64dbg.
+
+## Oreans Themida v1.8 UnVirtualization Draft
+
+[Reference script, themida_1.8_unvirt_draft.py](https://github.com/dovezp/rce.scripts/blob/oreans/themida_1.8_unvirt_draft.py)
+[Reference dataset, oreans_handlers.csv](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_handlers.csv)
 
 This script contains functions and logic for defining and working with the "VMContext" structure, finding VMs, handlers, and their offsets, and creating/setting the VMContext within the IDA database.
 
@@ -13,11 +18,51 @@ The overall flow of the Themida 1.8 unvirtualization script is as follows:
 * Create and set the VMContext at a specific base address using `set_vmcontext(ea)`.
 * Obtain information about the VM using the Context class, which takes in the VMContext's base address and related information.
 
-### Unpacking OEP Oreans v2 Demo
+## Oreans v2 Entry Unpacking Decryption
+
+[Reference script, themida_entry.py](https://github.com/dovezp/rce.scripts/blob/oreans/themida_entry.py)
+
+## Oreans v2 Macro Identifiers
+
+[Reference script, oreans_macro_entry_identifier_biased.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_macro_entry_identifier_biased.py)
+[Reference script, oreans_macro_entry_identifier_reversal.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_macro_entry_identifier_reversal.py)
+
+## Oreans v2 Antis
+
+[Reference script, oreans_anti_debug_blacklist_identifier.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_anti_debug_blacklist_identifier.py)
+[Reference code, tmdv2_vmware_check.asm](https://github.com/dovezp/rce.scripts/blob/oreans/tmdv2_vmware_check.asm)
+
+## Oreans v2 Junk
+
+[Reference script, ](https://github.com/dovezp/rce.scripts/blob/oreans/ida_vm_junk_buffer.py)
+
+## Oreans Chains 
+
+[Reference script, simplify_jmp_chain.py](https://github.com/dovezp/rce.scripts/blob/oreans/simplify_jmp_chain.py)
+[Reference script, is_jmp_chain.py](https://github.com/dovezp/rce.scripts/blob/oreans/is_jmp_chain.py)
+[Reference script, final_jmp_chain_address.py](https://github.com/dovezp/rce.scripts/blob/oreans/final_jmp_chain_address.py)
+
+## Oreans Notes
+
+[Reference note, brief_note__themida_v2_mutations.md](https://github.com/dovezp/rce.scripts/blob/oreans/brief_note__themida_v2_mutations.md)
+[Reference note, oreans_v2_note_tutorials.md](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_v2_note_tutorials.md)
+[Reference note, themida_v3_secureengine_notes.md](https://github.com/dovezp/rce.scripts/blob/oreans/themida_v3_secureengine_notes.md)
+[Reference note, oreans_demo_vm_hooking.md](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_demo_vm_hooking.md)
+
+## Oreans OEP Finder
+
+[Reference script, oreans_oep_finder.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_oep_finder.py)
+
+### Oreans v2 Unpacking OEP Demo
 https://github.com/dovezp/rce.scripts/assets/89095890/6e225737-0867-4a1e-94d1-10106c8c7841
 
-### Unpacking OEP Oreans v3 Demo
+### Oreans v3 Unpacking OEP Demo
 https://github.com/dovezp/rce.scripts/assets/89095890/ff25b2d6-57d4-499a-87e7-4a8444d57c46
+
+## Oreans v3 API Unwrapping
+
+[Reference script, oreans_api_unwrapper_x.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_api_unwrapper_x.py)
+[Reference script, oreans_oep_finder_with_api_unwrapper.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_oep_finder_with_api_unwrapper.py)
 
 ### Unpacking Imports Oreans v3 Demo 
 https://github.com/dovezp/rce.scripts/assets/89095890/83c2a278-93b3-475e-a177-fd99bb72c0d9
