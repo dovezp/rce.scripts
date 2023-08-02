@@ -27,6 +27,9 @@ The example script decodes the entry buffer of data located at 0x3233008 with a 
 ## Oreans v2 Macro Identifiers
 
 * [Reference script, oreans_macro_entry_identifier_biased.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_macro_entry_identifier_biased.py)
+
+This script is a Python script designed to identify and analyze macro entry points in programs protected by Oreans (a software protection system) using a biased search starting from the beginning of the text segment and iteratively finds potential macro entry points. It then verifies the accuracy of these potential entries and logs the results.
+  
 * [Reference script, oreans_macro_entry_identifier_reversal.py](https://github.com/dovezp/rce.scripts/blob/oreans/oreans_macro_entry_identifier_reversal.py)
 
 ## Oreans v2 Antis
