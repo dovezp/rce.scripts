@@ -17,7 +17,7 @@
 
 ## Feedback
 
-I welcome your constructive input - both negative and positive. I will continue to try to provide updates when able. At some point you may find errors, inconsistencies, or methods that could be improved, or are missing altogether. Your feedback is critical to help improve future revisions.
+I welcome your constructive input - both negative and positive. I will continue to try to provide updates when able. At some point, you may find errors, inconsistencies, or methods that could be improved or are missing altogether. Your feedback is critical to help improve future revisions.
 
 The best way to reach out is by opening a new issue in this repository:
 
@@ -33,9 +33,6 @@ Many thanks.
   <p align="center">
     <a href="https://hits.seeyoufarm.com/api/count/graph/dailyhits.svg?url=https://github.com/dovezp/rce.scripts">
       <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdovezp%2Frce.scripts&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true" alt="repository hits">
-    </a>
-    <a href="https://github.com/dovezp/rce.scripts/releases">
-      <img src="https://img.shields.io/github/downloads/dovezp/rce.scripts/total?style=flat-square" alt="downloads"/>
     </a>
     <a href="https://github.com/dovezp/rce.scripts/graphs/contributors">
       <img src="https://img.shields.io/github/contributors/dovezp/rce.scripts?style=flat-square" alt="contributors"/>
